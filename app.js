@@ -12,15 +12,12 @@ function change(joueur) {
   var ordi = choixOrdi[num];
   boxImageOrdi.setAttribute("src", "./images/"+ordi+".png");
   if  (joueur == ordi) {
-    boxScoreJoueur.innerHTML ="Score : " + scoreJoueur;
-    boxScoreOrdi.innerHTML ="Score : " + scoreOrdi;
+    return;
   } else if (joueur == "pierre" && ordi == "ciseaux" || joueur == "ciseaux" && ordi == "feuille" || joueur == "feuille" && ordi == "pierre")  {
     scoreJoueur++;
-    boxScoreJoueur.innerHTML ="Score :" + scoreJoueur;
-    boxScoreOrdi.innerHTML ="Score :" + scoreOrdi;
+    boxScoreJoueur.innerHTML = scoreJoueur;
   } else {
     scoreOrdi++;
-    boxScoreJoueur.innerHTML ="Score :" + scoreJoueur;
-    boxScoreOrdi.innerHTML ="Score :" + scoreOrdi;
+    boxScoreOrdi.innerHTML = scoreOrdi;
   }
 }
