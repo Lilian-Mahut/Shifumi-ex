@@ -18,7 +18,7 @@ function change(joueur) {
     scoreJoueur++;
     boxScoreJoueur.innerHTML ="Score :" + scoreJoueur;
     boxScoreOrdi.innerHTML ="Score :" + scoreOrdi;
-  } else if (joueur == "pierre" && ordi == "feuille" || joueur == "feuille" && ordi == "ciseaux" || joueur == "ciseaux" && ordi == "pierre")  {
+  } else {
     scoreOrdi++;
     boxScoreJoueur.innerHTML ="Score :" + scoreJoueur;
     boxScoreOrdi.innerHTML ="Score :" + scoreOrdi;
