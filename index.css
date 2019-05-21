@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container-shifumi {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    align-items: center;
+    height:20vh;
+    width: 100%;
+    margin-bottom: 20vh;
+}
+
+.container-shifumi div {
+    height: 35vh;
+}
+
+.container-shifumi div img {
+    height: auto;
+}
+
+.container2 {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+} 
+
+.container2 .box-joueur {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    width: 100%;
+}
+
+.container2 .box-joueur img {
+    width: 60%;
+    height: auto;
+}
+
+.compteuJoueur {
+    background-color: green;
+}
+
+.compteurOrdi  {
+    background-color: red;
+}
