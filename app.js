@@ -1,15 +1,15 @@
-var choixJoueur = "", imageJoueur = "", scoreJoueur = 0, scoreOrdi = 0;
-var boxImageJoueur = document.getElementById("imageJoueur");
-var boxScoreJoueur = document.getElementById("compteurJoueur");
-var choixOrdi = ["pierre", "feuille", "ciseaux"];
-var boxImageOrdi = document.getElementById("imageOrdi");
-var boxScoreOrdi = document.getElementById("compteurOrdi");
+let choixJoueur = "", imageJoueur = "", scoreJoueur = 0, scoreOrdi = 0;
+let boxImageJoueur = document.getElementById("imageJoueur");
+let boxScoreJoueur = document.getElementById("compteurJoueur");
+let choixOrdi = ["pierre", "feuille", "ciseaux"];
+let boxImageOrdi = document.getElementById("imageOrdi");
+let boxScoreOrdi = document.getElementById("compteurOrdi");
 
 function change(joueur) {
   choixJoueur = joueur;
   boxImageJoueur.setAttribute("src", "./images/"+joueur+".png");
-  var num = Math.floor(Math.random() * choixOrdi.length);
-  var ordi = choixOrdi[num];
+  let num = Math.floor(Math.random() * choixOrdi.length);
+  let ordi = choixOrdi[num];
   boxImageOrdi.setAttribute("src", "./images/"+ordi+".png");
   if  (joueur == ordi) {
     return;

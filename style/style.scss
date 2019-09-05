@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
+$round: 2.3em 'Ultra', sans-serif;
+
+// $score: 1.2em "Fira Sans", sans-serif;
+// $scoreHuman: 1.2em "Fira Sans", sans-serif;
+// $scoreRobot: 1.2em "Fira Sans", sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+$human: 2em 'Audiowide', cursive;
+$robot: 2em 'Audiowide', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Medula+One&display=swap');
+$humanChoice: 2em 'Medula One', cursive;
+$robotChoice: 2em 'Medula One', cursive;
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+}
+
+#score {
+    width: 86vw;
+    height: 30vh;
+    margin: 0 8em;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    #scoreHuman {
+        margin-top: 4em;
+        width: 20%;
+        height: 100%;
+        text-align: left;
+        h4 {
+            font: $score;
+        }
+        h5 {
+            font: $scoreHuman;
+        }
+        #humanStars {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 0;
+            li {
+                padding-right: 1em;
+            }
+        }
+    }
+    #round {
+        margin-top: 1em;
+        #roundNumber {
+            h1 {
+                font: $round;
+            }
+        }
+        #playersChoice {
+            display: flex;
+            flex-direction: row;
+            .humanChoice {
+                text-align: left;
+                h2 {
+                    font: $human;
+                }
+                h3 {
+                    font: $humanChoice;
+                }
+            }
+            .robotChoice {
+                text-align: right;
+                h2 {
+                    font: $robot;
+                }
+                h3 {
+                    font: $robotChoice;
+                }
+            }
+        }
+    }
+    #scoreRobot {
+        margin-top: 4em;
+        width: 20%;
+        height: 100%;
+        text-align: right;
+        h4 {
+            font: $score;
+        }
+        h5 {
+            font: $scoreRobot;
+        }
+        #robotStars {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            li {
+                padding-left: 1em;
+            }
+        }
+    }
+}
+
+// .container-shifumi {
+//     display:flex; 
+//     flex-direction: row; 
+//     justify-content: space-around; 
+//     align-items: center;
+//     height:20vh;
+//     width: 100%;
+//     margin-bottom: 20vh;
+// }
+
+// .container-shifumi div {
+//     height: 35vh;
+// }
+
+// .container-shifumi div img {
+//     height: auto;
+// }
+
+// .container2 {
+//     display:flex; 
+//     flex-direction: row; 
+//     justify-content: space-between; 
+//     align-items: center;
+//     width: 100%;
+// } 
+
+// .container2 .box-joueur {
+//     display:flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items : center;
+//     width: 100%;
+// }
+
+// .container2 .box-joueur img {
+//     width: 60%;
+//     height: auto;
+// }
+
+// .compteuJoueur {
+//     background-color: green;
+// }
+
+// .compteurOrdi  {
+//     background-color: red;
+// }

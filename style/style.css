@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+}
+
+#score {
+  width: 86vw;
+  height: 30vh;
+  margin: 0 8em;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+#score #scoreHuman {
+  margin-top: 4em;
+  width: 20%;
+  height: 100%;
+  text-align: left;
+}
+
+#score #scoreHuman h4 {
+  font: 1.2em "Fira Sans", sans-serif;
+}
+
+#score #scoreHuman h5 {
+  font: 1.2em "Fira Sans", sans-serif;
+}
+
+#score #scoreHuman #humanStars {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0;
+}
+
+#score #scoreHuman #humanStars li {
+  padding-right: 1em;
+}
+
+#score #round {
+  margin-top: 1em;
+}
+
+#score #round #roundNumber h1 {
+  font: 2.3em "Ultra", sans-serif;
+}
+
+#score #round #playersChoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#score #round #playersChoice .humanChoice {
+  text-align: left;
+}
+
+#score #round #playersChoice .humanChoice h2 {
+  font: 2em "Audiowide", cursive;
+}
+
+#score #round #playersChoice .humanChoice h3 {
+  font: 2em "Anton", sans-serif;
+}
+
+#score #round #playersChoice .robotChoice {
+  text-align: right;
+}
+
+#score #round #playersChoice .robotChoice h2 {
+  font: 2em "Audiowide", cursive;
+}
+
+#score #round #playersChoice .robotChoice h3 {
+  font: 2em "Anton", sans-serif;
+}
+
+#score #scoreRobot {
+  margin-top: 4em;
+  width: 20%;
+  height: 100%;
+  text-align: right;
+}
+
+#score #scoreRobot h4 {
+  font: 1.2em "Fira Sans", sans-serif;
+}
+
+#score #scoreRobot h5 {
+  font: 1.2em "Fira Sans", sans-serif;
+}
+
+#score #scoreRobot #robotStars {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#score #scoreRobot #robotStars li {
+  padding-left: 1em;
+}
+/*# sourceMappingURL=style.css.map */
