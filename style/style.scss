@@ -1,103 +1,149 @@
 @import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
-$round: 2.3em 'Ultra', sans-serif;
+$round: 'Ultra', sans-serif;
 
-// $score: 1.2em "Fira Sans", sans-serif;
-// $scoreHuman: 1.2em "Fira Sans", sans-serif;
-// $scoreRobot: 1.2em "Fira Sans", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&display=swap');
+$score: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+$scoreHuman: 'Open Sans Condensed', sans-serif;
+$scoreRobot: 'Open Sans Condensed', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
-$human: 2em 'Audiowide', cursive;
-$robot: 2em 'Audiowide', cursive;
+$human: 'Audiowide', cursive;
+$robot: 'Audiowide', cursive;
 
 @import url('https://fonts.googleapis.com/css?family=Medula+One&display=swap');
-$humanChoice: 2em 'Medula One', cursive;
-$robotChoice: 2em 'Medula One', cursive;
+$humanChoice: 'Medula One', cursive;
+$robotChoice: 'Medula One', cursive;
 
 body {
+    background: url(./pictures/wordcloud.png) no-repeat;
+    background-size: 100% 100%;
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: grey;
+    width: 99vw;
+    height: 98vh;
 }
 
-#score {
+#panel {
+    position: relative;
+    margin-top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
     width: 86vw;
     height: 30vh;
-    margin: 0 8em;
-    color: #fff;
-    display: flex;
-    flex-flow: row nowrap;
-    #scoreHuman {
-        margin-top: 4em;
-        width: 20%;
+    img {
+        position: absolute;
+        width: 100%;
         height: 100%;
-        text-align: left;
-        h4 {
-            font: $score;
-        }
-        h5 {
-            font: $scoreHuman;
-        }
-        #humanStars {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            padding-left: 0;
-            li {
-                padding-right: 1em;
-            }
-        }
     }
-    #round {
-        margin-top: 1em;
-        #roundNumber {
-            h1 {
-                font: $round;
-            }
-        }
-        #playersChoice {
-            display: flex;
-            flex-direction: row;
-            .humanChoice {
+    #score {
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        #scoreHuman {
+            width: 22%;
+            height: 87%;
+            border: solid violet 2px;
+            position: relative;
+            margin-top: 2.2em;
+            #human {
+                border: solid red 1px;
                 text-align: left;
-                h2 {
-                    font: $human;
+                list-style-type: none;
+                padding-left: 3em;
+                height: 22vh;
+                #humanTitle {
+                    border: solid greenyellow 1px;
+                    font-family: $score;
                 }
-                h3 {
-                    font: $humanChoice;
+                #humanBestOf {
+                    border: solid greenyellow 1px;
+                    font-family: $scoreHuman;
+                }
+                #humanStars {
+                    border: solid greenyellow 1px;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    li {
+                        padding-right: 1em;
+                    }
                 }
             }
-            .robotChoice {
+        }
+        #round {
+            border: solid blueviolet 1px;
+            position: relative;
+            width: 56%;
+            #roundNumber {
+                border: solid greenyellow 1px;
+                h1 {
+                    border: solid greenyellow 1px;
+                    font-family: $round;
+                    text-align: center;
+                }
+            }
+            #playersChoice {
+                border: solid greenyellow 1px;
+                #humanChoice {
+                    border: solid greenyellow 1px;
+                    text-align: left;
+                    h2 {
+                        border: solid greenyellow 1px;
+                        font-family: $human;
+                    }
+                    h3 {
+                        border: solid greenyellow 1px;
+                        font-family: $humanChoice;
+                    }
+                }
+                #robotChoice {
+                    border: solid greenyellow 1px;
+                    text-align: right;
+                    h2 {
+                        border: solid greenyellow 1px;
+                        font-family: $robot;
+                    }
+                    h3 {
+                        border: solid greenyellow 1px;
+                        font-family: $robotChoice;
+                    }
+                }
+            }
+        }
+        #scoreRobot {
+            width: 22%;
+            height: 87%;
+            border: solid yellowgreen 1px;
+            position: relative;
+            margin-top: 2.2em;
+            #robot {
+                border: solid black 1px;
                 text-align: right;
-                h2 {
-                    font: $robot;
+                list-style-type: none;
+                margin-right: 3em;
+                height: 22vh;
+                #robotTitle {
+                    border: solid greenyellow 1px;
+                    font-family: $score;
                 }
-                h3 {
-                    font: $robotChoice;
+                #robotBestOf {
+                    border: solid greenyellow 1px;
+                    font-family: $scoreRobot;
                 }
-            }
-        }
-    }
-    #scoreRobot {
-        margin-top: 4em;
-        width: 20%;
-        height: 100%;
-        text-align: right;
-        h4 {
-            font: $score;
-        }
-        h5 {
-            font: $scoreRobot;
-        }
-        #robotStars {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            li {
-                padding-left: 1em;
+                #robotStars {
+                    border: solid greenyellow 1px;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    li {
+                        padding-left: 1em;
+                    }
+                }
             }
         }
     }

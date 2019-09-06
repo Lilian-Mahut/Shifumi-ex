@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +9,54 @@
 </head>
 <body>
 
-    <div id="score">
-        <div id="scoreHuman">
-            <h4>SCORE</h4>
-            <h5>best of</h5>
-            <ul id="humanStars">
-                <li id="humanStar1">X</li>
-                <li id="humanStar2">X</li>
-                <li id="humanStar3">X</li>
-            </ul>
-        </div>
+    <div id="panel">
 
-        <div id="round">
-            <div id="roundNumber">
-                <h1>ROUND</h1>
-            </div>
-            <div id="playersChoice">
-                <div class="humanChoice">
-                    <h2>HUMAN</h2>
-                    <h3 id="humanChoice">PIERRE</h3>
-                </div>
-                <div class="robotChoice">
-                    <h2>ROBOT</h2>
-                    <h3 id="robotChoice">CISEAUX</h3>
-                </div>
-            </div>
-        </div>
+            <img src="./style/pictures/scorebg.png" alt="Display score panel">
+            
+            <div id="score">
 
-        <div id="scoreRobot">
-            <h4>SCORE</h4>
-            <h5>best of</h5>
-            <ul id="robotStars">
-                <li id="robotStar3">X</li>
-                <li id="robotStar2">X</li>
-                <li id="robotStar1">X</li>
-            </ul>
+                <div id="scoreHuman">
+                    <ul id="human">
+                        <li id="humanTitle">SCORE</li>
+                        <li id="humanBestOf">best of</li>
+                        <ul id="humanStars">
+                            <li id="humanStar1">X</li>
+                            <li id="humanStar2">X</li>
+                            <li id="humanStar3">X</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div id="round">
+                    <div id="roundNumber">
+                        <h1>ROUND</h1>
+                    </div>
+                    <div id="playersChoice">
+                        <div id="humanChoice">
+                            <h2>HUMAN</h2>
+                            <h3 id="humanChoice">PIERRE</h3>
+                        </div>
+                        <div id="robotChoice">
+                            <h2>ROBOT</h2>
+                            <h3 id="robotChoice">CISEAUX</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="scoreRobot">
+                    <ul id="robot">
+                        <li class="robotTitle">SCORE</li>
+                        <li class="robotBestOf">best of</li>
+                        <ul id="robotStars">
+                            <li id="robotStar3">X</li>
+                            <li id="robotStar2">X</li>
+                            <li id="robotStar1">X</li>
+                        </ul>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
