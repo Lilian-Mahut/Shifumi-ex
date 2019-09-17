@@ -12,9 +12,9 @@ body {
   height: 98vh;
 }
 
-#panel {
+.panel {
   position: relative;
-  margin-top: 1em;
+  margin-top: 2vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -22,13 +22,13 @@ body {
   height: 30vh;
 }
 
-#panel img {
+.panel img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-#panel #score {
+.panel .score {
   height: 100%;
   color: #fff;
   display: -webkit-box;
@@ -41,33 +41,37 @@ body {
           justify-content: center;
 }
 
-#panel #score #scoreHuman {
-  width: 22%;
-  height: 87%;
-  border: solid violet 2px;
+.panel .score .scoreHuman {
   position: relative;
-  margin-top: 2.2em;
+  width: 19.5vw;
+  height: 26vh;
+  border: solid violet 1px;
+  margin-top: 3.5vh;
 }
 
-#panel #score #scoreHuman #human {
+.panel .score .scoreHuman .human {
   border: solid red 1px;
   text-align: left;
   list-style-type: none;
-  padding-left: 3em;
-  height: 22vh;
+  padding-left: 3vw;
+  height: 100%;
 }
 
-#panel #score #scoreHuman #human #humanTitle {
+.panel .score .scoreHuman .human .humanTitle {
   border: solid greenyellow 1px;
   font-family: "Roboto", sans-serif;
+  margin-top: 7vh;
+  margin-bottom: 0;
 }
 
-#panel #score #scoreHuman #human #humanBestOf {
+.panel .score .scoreHuman .human .humanBestOf {
   border: solid greenyellow 1px;
   font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#panel #score #scoreHuman #human #humanStars {
+.panel .score .scoreHuman .human .humanStars {
   border: solid greenyellow 1px;
   list-style-type: none;
   display: -webkit-box;
@@ -77,89 +81,113 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#panel #score #scoreHuman #human #humanStars li {
-  padding-right: 1em;
+.panel .score .scoreHuman .human .humanStars li {
+  padding-right: 1vw;
 }
 
-#panel #score #round {
-  border: solid blueviolet 1px;
+.panel .score .round {
+  border: solid blueviolet 2px;
   position: relative;
-  width: 56%;
+  width: 49vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
-#panel #score #round #roundNumber {
+.panel .score .round .roundNumber {
   border: solid greenyellow 1px;
 }
 
-#panel #score #round #roundNumber h1 {
+.panel .score .round .roundNumber h1 {
   border: solid greenyellow 1px;
   font-family: "Ultra", sans-serif;
   text-align: center;
+  margin-top: 1.5vh;
 }
 
-#panel #score #round #playersChoice {
+.panel .score .round .playersChoice {
   border: solid greenyellow 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
-#panel #score #round #playersChoice #humanChoice {
+.panel .score .round .playersChoice .humanChoice {
   border: solid greenyellow 1px;
   text-align: left;
+  width: 100%;
 }
 
-#panel #score #round #playersChoice #humanChoice h2 {
+.panel .score .round .playersChoice .humanChoice h2 {
   border: solid greenyellow 1px;
   font-family: "Audiowide", cursive;
 }
 
-#panel #score #round #playersChoice #humanChoice h3 {
+.panel .score .round .playersChoice .humanChoice h3 {
   border: solid greenyellow 1px;
   font-family: "Medula One", cursive;
 }
 
-#panel #score #round #playersChoice #robotChoice {
+.panel .score .round .playersChoice .robotChoice {
   border: solid greenyellow 1px;
   text-align: right;
+  width: 100%;
 }
 
-#panel #score #round #playersChoice #robotChoice h2 {
+.panel .score .round .playersChoice .robotChoice h2 {
   border: solid greenyellow 1px;
   font-family: "Audiowide", cursive;
 }
 
-#panel #score #round #playersChoice #robotChoice h3 {
+.panel .score .round .playersChoice .robotChoice h3 {
   border: solid greenyellow 1px;
   font-family: "Medula One", cursive;
 }
 
-#panel #score #scoreRobot {
-  width: 22%;
-  height: 87%;
-  border: solid yellowgreen 1px;
+.panel .score .scoreRobot {
   position: relative;
-  margin-top: 2.2em;
+  width: 19.5vw;
+  height: 26vh;
+  border: solid yellowgreen 1px;
+  margin-top: 3.5vh;
 }
 
-#panel #score #scoreRobot #robot {
+.panel .score .scoreRobot .robot {
   border: solid black 1px;
   text-align: right;
   list-style-type: none;
-  margin-right: 3em;
-  height: 22vh;
+  margin: 0 0;
+  padding-right: 3vw;
+  height: 100%;
 }
 
-#panel #score #scoreRobot #robot #robotTitle {
+.panel .score .scoreRobot .robot .robotTitle {
   border: solid greenyellow 1px;
   font-family: "Roboto", sans-serif;
+  margin-top: 7vh;
+  margin-bottom: 0;
 }
 
-#panel #score #scoreRobot #robot #robotBestOf {
+.panel .score .scoreRobot .robot .robotBestOf {
   border: solid greenyellow 1px;
   font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#panel #score #scoreRobot #robot #robotStars {
+.panel .score .scoreRobot .robot .robotStars {
   border: solid greenyellow 1px;
   list-style-type: none;
   display: -webkit-box;
@@ -172,9 +200,11 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-#panel #score #scoreRobot #robot #robotStars li {
-  padding-left: 1em;
+.panel .score .scoreRobot .robot .robotStars li {
+  padding-left: 1vw;
 }
 /*# sourceMappingURL=style.css.map */
